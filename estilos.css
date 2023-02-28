@@ -1,0 +1,161 @@
+/* 
+// =====================================================================================
+// CURSO FRONT ACADEMY - 2022 (ARGENTINA PROGRAMA 4.0) - PROYECTO FINAL
+// Archivo de Estilos CCS 
+// Alumno: Raul Antonio CABIDO
+// =====================================================================================
+*/
+
+
+/* Configuraciones Globales */
+* {
+  box-sizing: border-box;
+  font-family:Roboto,sans-serif;
+  font-size:15px
+}
+
+/* Definicion de Colores */
+:root {
+  --color_encabezado: #9dafb4;
+  --color_fondo: #ece6e6c4;
+  --color_celda: #ffffff;
+  --color_titulo:rgb(0, 87, 94);
+  --color_subtitulo:rgb(129, 129, 129);
+  --color_fecha:rgb(0, 124, 133);
+  --color_icono:var(--color_fecha);
+}
+
+/* Color de Fondo Principal*/
+body {
+    background-color: var(--color_fondo);
+}
+
+/* Para que los divs de Exp Laboral y Formacion Academica se acomoden
+a la par del div del Perfil, no es necesario el ::after */
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+[class*="col-"] {
+  background-color: var(--color_celda);
+  float: left;
+  padding: 15px;
+  border: 5px solid var(--color_fondo);
+}
+
+/* Division del Ancho de la pagina en 12 Columnas */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* Propiedades de los Iconos */
+i{
+  color: var(--color_icono);
+}
+
+/* Propiedades del Encabezado */
+.encabezado{
+  background-color: var(--color_encabezado);
+  color: #ffffff;
+  text-align: right;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 30px;
+  border-width: 0px;
+  
+  padding: 5px;
+}
+
+.piepagina {
+  background-color:var(--color_encabezado);
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  border-width: 0px;
+  
+}
+
+/* Experiencia Laboral, Educacion */
+.titulo{  
+  color: var(--color_titulo);
+  font-weight: bold;
+  font-size: 17pt;
+}
+
+/* Subtitulos */
+.subtitulo{
+  font-family: 'Roboto', sans-serif;
+  color: var(--color_subtitulo);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Fechas */
+.fecha{
+  font-family: 'Roboto', sans-serif;
+  color: var(--color_fecha);
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+.explicacion{
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: var(--color_fondo);
+  padding-bottom: 10px;
+}
+
+.datos{
+  /* padding-bottom: 10px; */
+  margin: 10px 0px;
+}
+
+.aptitudes{
+  /* border-top-style: solid; */
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: var(--color_fondo);
+  padding-bottom: 10px;
+}
+
+
+#nombre{
+  color:rgb(87, 85, 85);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center; 
+}
+
+#imagen{
+   text-align: center; 
+}
+
+#profesion{
+  color:rgb(0, 87, 94) ;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+    
+}
+

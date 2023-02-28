@@ -1,0 +1,220 @@
+<!-- 
+// =====================================================================================
+// CURSO FRONT ACADEMY - 2022 (ARGENTINA PROGRAMA 4.0) - PROYECTO FINAL
+// Archivo HTML
+// Alumno: Raul Antonio CABIDO
+// =====================================================================================
+ -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-Cabido</title>
+
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Fuentes de Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Iconos de fontawasome.com -->
+    <script src="https://kit.fontawesome.com/d1747b27c5.js" crossorigin="anonymous"></script>
+
+    <!-- W3CSS de w3school.com -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    <header class="col-12 encabezado">
+        CURRICULUM VITAE 
+    </header>   
+
+    <div class="row">
+        <!-- INFORMACION PERSONAL: PERFIL
+             ============================================== -->
+        <div class="col-3">
+            <!-- Foto de Perfil: Se ocupa todo el ancho del contenedor -->
+            <div>
+                <img id="imagen" src="https://imagen.jpg" alt="foto_perfil" style='height: auto; width: 100%; text-align: center; object-fit: contain;'> 
+            </div>
+            
+            <!-- https://www.w3schools.com/html/img_chania.jpg -->
+
+            <!-- Nombre y profesion -->
+            <h1 id="nombre">Nombre</h1>
+            <h2  id="profesion"> 
+                <i class="fa-solid fa-briefcase fa-lg"></i>
+                Frontend Developer
+            </h2>
+            
+            <!-- Correo Electronico -->
+            <div class="datos">
+                <i class="fa-solid fa-envelope fa-pull-left"></i>
+                <span  id="email" class="datos"> email </span> 
+            </div>
+                
+            <!-- Celular/Whatsapp -->
+            <div class="datos">
+                <i class="fa fa-brands fa-whatsapp fa-fw"></i>
+                <span  id="celular" class="datos"> celular </span> 
+            </div>
+
+            <!-- Telefono -->
+            <div class="datos">
+                <i class="fa fa-phone fa-fw "></i>
+                <span  id="telefono" class="datos"> telefono </span> 
+            </div>
+            <!-- Direccion -->
+            <div class="datos">
+                <i class="fa fa-home fa-fw"></i>
+                <span  id="adress" class="datos"> adress </span> 
+                <p class="explicacion"></p>
+            </div>         
+
+            <!-- Idiomas -->
+            <div class="aptitudes">
+                <h2 class="subtitulo"> 
+                    <i class="fa-solid fa-earth-americas "></i>
+                    Idiomas
+                </h2>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-check-square"></i>Ingles</li>
+                    <li><i class="fa-li fa fa-check-square"></i>Frances</li>
+                    <li><i class="fa-li fa fa-check-square"></i>Aleman</li>
+                </ul>
+                <!-- <p>Esto es una division dentro de otra</p> -->
+            </div>
+
+            <!-- Aptitudes  -->
+            <div class="aptitudes">
+                <h2 class="subtitulo"> 
+                    <i class="fa-solid fa-computer "></i>
+                    
+                    Programacion
+                </h2>
+                <div class="w3-container">
+                    CSS:
+                    <div class="w3-light-grey w3-round">
+                        <div class="w3-container w3-gray w3-round w3-center" style="width:50%">50%</div>
+                    </div><br>
+                    
+                    HTML:
+                    <div class="w3-light-grey w3-round">
+                        <div class="w3-container w3-gray w3-round w3-center" style="width:75%">75%</div>
+                    </div><br>
+
+                    JavaScript:
+                    <div class="w3-light-grey w3-round">
+                        <div class="w3-container w3-gray w3-round w3-center" style="width:75%">75%</div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <!-- EXPERIENCIA LABORAL
+             ============================================== -->
+        <div class="col-9">
+            <h1 class="titulo"> 
+                <i class="fa-solid fa-suitcase fa-lg"></i>
+                Experiencia Laboral
+            </h1>
+
+            <!-- Experiencia 1 -->
+            <h2 class="subtitulo">
+                Frontend Developer / seprogramar.com.ar
+            </h2>
+            <h3 class="fecha">
+                <i class="fa-solid fa-calendar-days"></i>
+                Enero 2015 - Actualidad
+            </h3>
+            <p class="explicacion"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at pretium mi. 
+                Vivamus rhoncus rutrum quam, in varius risus gravida nec. Vestibulum molestie magna eget velit pellentesque, nec euismod eros feugiat. 
+            </p>
+
+            <!-- Experiencia 3 -->
+            <h2 class="subtitulo">
+                Web Developer / otraempresa.com.ar
+            </h2>        
+            <h3 class="fecha">
+                <i class="fa-solid fa-calendar-days"></i>
+                Julio 2010 - Diciembre 2014
+            </h3>
+           <p> 
+                Nullam id auctor arcu. Nunc posuere turpis enim. Nam venenatis gravida turpis vitae venenatis. 
+                Donec enim ante, cursus at nisl a, eleifend ullamcorper nisl. Ut eros nibh, vehicula nec leo non, fringilla iaculis risus.
+            </p>
+          
+        </div>
+        
+      </div>
+    
+    
+        <!-- FORMACION ACADEMICA
+             ============================================== -->
+        <div class="col-9">
+            <h1 class="titulo">
+                <i class="fa-solid fa-building-columns fa-lg"></i>
+                Formación Academica 
+            </h1>
+
+            <!-- Formacion 1 -->
+            <h2 class="subtitulo">
+                Argentina Programa 4.0
+            </h2>
+            <h3 class="fecha">
+                <i class="fa-solid fa-calendar-days"></i>
+                2022 - 2023
+            </h3>
+            <p class="explicacion">
+                Desarrollo de Paginas Web.
+            </p>
+            <!-- Formacion 2 -->
+            <h2 class="subtitulo">
+                Universidada Nacional
+            </h2>
+            <h3 class="fecha">
+                <i class="fa-solid fa-calendar-days"></i>
+                2011 - 2016
+            </h3>            
+            <p class="explicacion">
+                Analista en Sistemas
+            </p>
+
+            <!-- Formacion 3 -->
+            <h2 class="subtitulo">
+                Colegio Dr. Facundo de Zuviria
+            </h2>
+            <h3 class="fecha">
+                <i class="fa-solid fa-calendar-days"></i>
+                2005 - 2010
+            </h3>            
+            <p>
+                Perito Mercantil
+            </p>
+         </div>
+
+
+
+    <!-- Pie de Pagina -->
+    <footer class="col-12 piepagina">
+        <div>
+        <i class="fa fa-facebook-official fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-instagram fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-snapchat fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-twitter fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-linkedin fa-2x w3-hover-opacity"></i>
+        </div>             
+    </footer>
+
+    <!-- Scripts en JavaScript -->
+    <script src="funciones.js"></script>
+</body>
+</html>
