@@ -41,3 +41,28 @@ async function read_Personas(url){
 
 read_Personas(url_1);
 
+// Links de los perfiles en Redes Sociales, los urls se deben cambiar por la direccion del usuario del CV
+url_face = "https://facebook.com/";
+url_insta = "https://www.instagram.com/";
+url_twitter = "https://twitter.com/";
+url_link = "https://www.linkedin.com/";
+
+document.getElementById("facebook").addEventListener('click',function(){
+  console.log("clic en facebook")
+  window.open(url_face)
+});
+document.getElementById("instagram").addEventListener('click',function(){
+    console.log("clic en instagram")
+    window.open(url_insta)
+});
+
+document.getElementById("twitter").addEventListener('click',function(){
+  console.log("clic en twitter")
+  window.open(url_twitter)
+});
+
+document.getElementById("linkedin").addEventListener('click',function(){
+  console.log("clic en linkedin")
+  window.open(url_link)
+});
+
